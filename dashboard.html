@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <style>
+      .konten1 {
+        margin: 10% auto;
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-style: oblique;
+        font-size: 23px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a id="informasiBA">Informasi Bahan Ajar</a></li>
+        <li><a id="tracking">Tracking Pengiriman</a></li>
+        <li class="dropdown">
+          <button
+            class="dropdown-btn"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Laporan ▾
+          </button>
+
+          <div class="dropdown-content" role="menu" aria-label="Laporan">
+            <a id="monitoring" role="menuitem"
+              >Monitoring Progres DO Bahan Ajar</a
+            >
+            <a id="rekap" role="menuitem">Rekap Bahan Ajar</a>
+          </div>
+        </li>
+        <li>
+          <a id="home">Histori Transaksi Bahan Ajar</a>
+        </li>
+        <li class="logout">
+          <a id="logout">Log Out</a>
+        </li>
+      </ul>
+    </nav>
+    <script src="js/link.js"></script>
+    <script src="js/navbar.js"></script>
+    <div class="konten1">
+      <img src="asset/logout.png" width="500px" />
+      <h1>Dashboard Aplikasi SITTA</h1>
+      <b id="sambutan"></b>
+    </div>
+    <script src="js/sambutan.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Informasi Bahan Ajar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/buku.css" />
+    <style>
+      .welcome,
+      .konten1 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a id="informasiBA">Informasi Bahan Ajar</a></li>
+        <li><a id="tracking">Tracking Pengiriman</a></li>
+        <li class="dropdown">
+          <button
+            class="dropdown-btn"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Laporan ▾
+          </button>
+
+          <div class="dropdown-content" role="menu" aria-label="Laporan">
+            <a id="monitoring" role="menuitem"
+              >Monitoring Progres DO Bahan Ajar</a
+            >
+            <a id="rekap" role="menuitem">Rekap Bahan Ajar</a>
+          </div>
+        </li>
+        <li>
+          <a id="home">Histori Transaksi Bahan Ajar</a>
+        </li>
+        <li class="logout">
+          <a id="logout">Log Out</a>
+        </li>
+      </ul>
+    </nav>
+    <script src="js/link.js"></script>
+    <script src="js/navbar.js"></script>
+    <div class="welcome">
+      <b id="sambutan"></b>
+    </div>
+    <script src="js/sambutan.js"></script>
+    <div class="konten1">
+      <h2>Informasi Bahan Ajar</h2>
+      <div class="card-container" id="cardContainer"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalCover" src="" alt="Cover Buku" />
+        <h3 id="modalNama"></h3>
+        <p><strong>Kode Lokasi:</strong> <span id="modalLokasi"></span></p>
+        <p><strong>Kode Barang:</strong> <span id="modalKode"></span></p>
+        <p><strong>Jenis Barang:</strong> <span id="modalJenis"></span></p>
+        <p><strong>Edisi:</strong> <span id="modalEdisi"></span></p>
+        <p><strong>Stok:</strong> <span id="modalStok"></span></p>
+        <div class="stok-buttons">
+          <button id="btnKurang">- Stok</button>
+          <button id="btnTambah">+ Stok</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/buku.js"></script>
+  </body>
+</html>

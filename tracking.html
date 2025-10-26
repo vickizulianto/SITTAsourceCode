@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tracking Pengiriman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/tracking.css" />
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a id="informasiBA">Informasi Bahan Ajar</a></li>
+        <li><a id="tracking">Tracking Pengiriman</a></li>
+        <li class="dropdown">
+          <button
+            class="dropdown-btn"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Laporan ▾
+          </button>
+
+          <div class="dropdown-content" role="menu" aria-label="Laporan">
+            <a id="monitoring" role="menuitem"
+              >Monitoring Progres DO Bahan Ajar</a
+            >
+            <a id="rekap" role="menuitem">Rekap Bahan Ajar</a>
+          </div>
+        </li>
+        <li>
+          <a id="home">Histori Transaksi Bahan Ajar</a>
+        </li>
+        <li class="logout">
+          <a id="logout">Log Out</a>
+        </li>
+      </ul>
+    </nav>
+    <script src="js/link.js"></script>
+    <script src="js/navbar.js"></script>
+    <div class="welcome">
+      <b id="sambutan"></b>
+    </div>
+    <script src="js/sambutan.js"></script>
+
+    <div class="konten1">
+      <h1>Tracking Pengiriman</h1>
+      <form id="trackingForm">
+        <label for="NObilling">No. DO/Billing:</label>
+        <input
+          type="text"
+          id="NObilling"
+          name="NObilling"
+          placeholder="Contoh: 1234123421"
+        />
+        <button class="btn-cari" type="submit">Cari</button>
+      </form>
+
+      <div id="hasilTracking"></div>
+    </div>
+    <div id="modalsalah" class="modal">
+      <div class="modal-content">
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/6711/6711656.png"
+        /><br />
+        <b>Nomor tidak ditemukan !</b><br />
+        <button class="oke-modal" onclick="closeModal()">Coba Lagi</button>
+      </div>
+    </div>
+    <script src="js/tracking.js"></script>
+  </body>
+</html>

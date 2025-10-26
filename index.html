@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Halaman Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <style>
+      .modal {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+      }
+      .modal-content {
+        background: white;
+        margin: 150px auto;
+        padding: 20px;
+        width: 150px;
+        border-radius: 20px;
+      }
+      .lupa {
+        padding: 10px;
+        margin: 8px;
+        border: thin;
+        background: rgb(81, 160, 234);
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .lupa:hover {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="konten1">
+      <h2>Selamat Datang</h2>
+      <form id="loginForm">
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="e-mail"
+        /><br /><br />
+
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="password"
+        />
+
+        <input type="submit" value="Masuk" />
+      </form>
+      <div id="modalsalah" class="modal">
+        <div class="modal-content">
+          <img src="https://cdn-icons-png.flaticon.com/128/3409/3409569.png" />
+          <button class="lupa" onclick="closeModal()">Lupa Password ?</button
+          ><br />
+          <button class="lupa" onclick="closeModal()">Daftar</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/dataAKUN.js"></script>
+  </body>
+</html>
